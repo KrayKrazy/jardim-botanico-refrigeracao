@@ -1,0 +1,15 @@
+{
+  "name": "Jardim Botânico Refrigeração Prime",
+  "short_name": "JB Refrigeração",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071527",
+  "theme_color": "#0A2540",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
