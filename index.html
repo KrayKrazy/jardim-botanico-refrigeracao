@@ -16,6 +16,13 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="apple-touch-icon" href="assets/favicon.svg" />
 
+  <!-- LLM & AI Discovery Endpoints -->
+  <link rel="alternate" type="text/markdown" href="https://jardim-botanico-refrigeracao.vercel.app/llms.txt" title="LLM Knowledge Profile" />
+  <link rel="alternate" type="text/markdown" href="https://jardim-botanico-refrigeracao.vercel.app/llms-full.txt" title="Full Knowledge Base" />
+
+  <!-- Verificação Google Search Console (Método Meta Tag Alternativo) -->
+  <meta name="google-site-verification" content="d78372448ce7f5e7" />
+
   <!-- Geo Localização para SEO Local no Jardim Botânico / Lago Sul / Brasília - DF -->
   <meta name="geo.region" content="BR-DF" />
   <meta name="geo.placename" content="Jardim Botânico, Brasília" />
@@ -42,7 +49,7 @@
   <!-- Estilos Customizados -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Schema.org JSON-LD (SEO Local Estruturado) -->
+  <!-- Schema.org JSON-LD (SEO Local Estruturado Completo + FAQPage + Catálogo de Serviços) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -81,17 +88,106 @@
         ],
         "areaServed": [
           { "@type": "AdministrativeArea", "name": "Jardim Botânico" },
-          { "@type": "AdministrativeArea", "name": "Lago Sul" },
+          { "@type": "AdministrativeArea", "name": "Condomínio Solar de Brasília" },
+          { "@type": "AdministrativeArea", "name": "Condomínio San Diego" },
+          { "@type": "AdministrativeArea", "name": "Condomínio Quintas do Sol" },
+          { "@type": "AdministrativeArea", "name": "Condomínio Ville de Montagne" },
+          { "@type": "AdministrativeArea", "name": "Condomínio Belvedere Green" },
           { "@type": "AdministrativeArea", "name": "Jardim Mangueiral" },
+          { "@type": "AdministrativeArea", "name": "Lago Sul" },
           { "@type": "AdministrativeArea", "name": "Tororó" },
           { "@type": "AdministrativeArea", "name": "Altiplano Leste" },
           { "@type": "AdministrativeArea", "name": "São Sebastião" }
         ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços Especializados de Linha Branca",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Conserto de Refrigeradores French Door e Inverter",
+                "description": "Manutenção em domicílio de refrigeradores French Door, Side by Side e Inverter com peças genuínas de fábrica."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Assistência Técnica de Lava e Seca Front Load",
+                "description": "Troca de rolamentos blindados, retentores duplos e conserto de placas de comando."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Manutenção de Adegas Climatizadas e Cervejeiras",
+                "description": "Estabilização térmica precisa para rótulos de vinhos e compressores anti-vibração silenciosos."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Troca de Compressores e Carga de Gás com Balança Digital",
+                "description": "Procedimento técnico com bomba de vácuo de duplo estágio e fluido refrigerante ecológico R600a/R134a."
+              }
+            }
+          ]
+        },
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
           "reviewCount": "412"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://jardim-botanico-refrigeracao.vercel.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como funciona a liberação de entrada na portaria do condomínio?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Assim que o atendimento é agendado, enviamos pelo WhatsApp os dados completos do técnico (nome, RG/CPF) e a placa do veículo da empresa para que você possa autorizar previamente na portaria ou no aplicativo do condomínio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês tomam cuidados para não danificar pisos nobres e armários?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim! Nossos técnicos utilizam tapetes acolchoados de proteção e calçados especiais para garantir que pisos de porcelanato, mármore ou madeira nobre, além de bancadas de quartzo/Silestone, permaneçam intactos durante o conserto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona a visita técnica e o diagnóstico no local?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nosso técnico se desloca até sua residência no Jardim Botânico com ferramental completo e peças de reposição. Ele realiza a inspeção minuciosa na sua presença, identifica a falha e apresenta a solução transparente antes de qualquer intervenção."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quais as opções de pagamento?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Aceitamos cartões de crédito (parcelamento em até 12x), cartões de débito, PIX e transferência bancária. O pagamento é realizado somente após a conclusão e validação do funcionamento do seu eletrodoméstico."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vocês cobrem qualquer orçamento de assistência técnica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim! Cobrimos orçamentos comprovados de empresas registradas, assegurando o uso de peças genuínas de fábrica e atendimento ágil na sua residência."
+            }
+          }
+        ]
       }
     ]
   }
